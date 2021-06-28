@@ -1,0 +1,105 @@
+.advantages {
+
+    background-color: white;
+    padding: 2rem;
+    padding-bottom: 5rem;
+
+    &__box-container {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 35rem);
+        column-gap: 3rem;
+        justify-content: center;
+    }
+
+    &__box {
+        border: 1px solid $color-primary-light;
+        padding: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__box::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $color-primary-light;
+        z-index: -1;
+        transition: all .2s ease-in;
+    }
+
+    &__box:hover::after {
+        width: 100%;
+    }
+
+    &__heading {
+        font-size: 1.7rem;
+        letter-spacing: 0.1rem;
+        background-color: $color-primary-light;
+        color: $color-light-1;
+        padding: 1rem;
+        text-align: center;
+        transition: 0.2s linear;
+        transition-delay: .1s;
+    }
+
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+        fill: $color-primary-light;
+        display: block;
+        margin: 3rem auto;
+        transition: 0.2s linear;
+        transition-delay: .1s;
+    }
+
+    &__text {
+        margin: 2rem 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        transition: 0.2s linear;
+        transition-delay: .1s;
+    }
+
+    &__ref {
+        
+        display: grid;
+        grid-template-columns: min-content min-content;
+        color: $color-primary-light;
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: end;
+        column-gap: 1rem;
+
+        &::before {
+            content: "";
+            height: 1px;
+            background-color: $color-primary-light;
+            width: 5rem;
+        }
+    }
+
+    &__box:hover &__icon {
+        fill: $color-light-1;
+    }
+
+    &__box:hover &__heading {
+        background-color: $color-light-1;
+        color: $color-primary-light;
+    }
+
+    &__box:hover &__text {
+        color: $color-light-1;
+    }
+
+    &__box:hover &__ref {
+        color: $color-light-1;
+    }
+
+    &__box:hover &__ref::before {
+        background-color: $color-light-1;
+    }
+}

@@ -1,0 +1,29 @@
+.header {
+
+    background-color: $color-tertiary;
+    padding: 2rem 5rem;
+    box-shadow: 0 2rem 5rem rgba(#000, 0.1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    &__logo {
+        width: 3.5rem;
+        height: 3.5rem;
+        fill: $color-primary;
+        margin-right: 1rem;
+        transition: all .2s;
+    }
+
+    &:hover &__logo {
+        transform: rotateZ(10deg) scale(1.1);
+        fill: $color-primary-light;
+    }
+
+    &__text {
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 2.4rem;
+        color: $color-primary;
+    }
+}
