@@ -22,14 +22,31 @@
     &__container {
         display: grid;
         grid-template-columns: repeat(3, 30rem);
-        column-gap: 5rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
         justify-content: center;
         padding: 3rem;
+
+        @media only screen and (max-width: $screen-large) {
+            grid-template-columns: repeat(3, 25rem);
+        }
+
+        @media only screen and (max-width: $screen-medium) {
+            grid-template-columns: repeat(3, 20rem);
+        }
+
+        @media only screen and (max-width: $screen-small) {
+            grid-template-columns: repeat(3, 15rem);
+        }
     }
 
     &__item {
         padding: 2rem;
         background-color: $color-dark-2;
+
+        @media only screen and (max-width: $screen-small) {
+            padding: 1rem;
+        }
     }
 
     &__item-heading {

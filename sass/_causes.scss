@@ -2,12 +2,25 @@
     background-color: white;
     padding: 2rem 0;
 
+    &__heading-main {
+        padding: 2rem;
+    }
+
     &__container {
         margin: 5rem 10rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 2rem;
         align-items: center;
+
+        @media only screen and (max-width: $screen-medium) {
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+        }
+
+        @media only screen and (max-width: $screen-small) {
+            margin: 5rem 5rem;
+        }
     }
 
     &__content {
