@@ -16,7 +16,7 @@ body {
   background-image: linear-gradient(45deg, rgba(6, 68, 32, 0.3), rgba(250, 241, 230, 0.2));
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: Lato;
+  font-family: Lato, Arial;
 }
 
 .heading-2 {
@@ -75,7 +75,7 @@ body {
 .nav__list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 12rem);
+  grid-template-columns: repeat(4, 12rem);
   justify-content: center;
   column-gap: 2rem;
 }
@@ -93,7 +93,7 @@ body {
 }
 .nav__link, .nav__link:link, .nav__link:visited {
   font-size: 1.4rem;
-  font-family: Lato;
+  font-family: Lato, Arial;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -319,7 +319,7 @@ body {
 .planting__heading {
   margin: 1rem;
   padding: 1rem;
-  font-family: Lato;
+  font-family: Lato, Arial;
   font-size: 3.5rem;
   text-transform: uppercase;
   color: #064420;
@@ -335,7 +335,7 @@ body {
 .planting__text {
   margin: 1rem;
   padding: 1rem;
-  font-family: Lato;
+  font-family: Lato, Arial;
   font-size: 2.4rem;
   color: #064420;
   font-weight: 300;
@@ -358,6 +358,48 @@ body {
   display: block;
   font-size: 1.4rem;
   margin-top: 1rem;
+}
+
+.causes {
+  background-color: white;
+  padding: 2rem 0;
+}
+.causes__container {
+  margin: 5rem 10rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2rem;
+  align-items: center;
+}
+.causes__content {
+  padding: 2rem;
+  background-color: rgba(6, 68, 32, 0.9);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+.causes__content:hover {
+  background-color: #064420;
+}
+.causes__img {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+.causes__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.causes__heading {
+  color: #E4EFE7;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.causes__text {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  color: #c6ddcc;
 }
 
 .footer {
@@ -408,6 +450,10 @@ body {
 }
 .footer__item-link:active, .footer__item-link:hover {
   letter-spacing: 0.5rem;
+}
+.footer__copyright-text {
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
